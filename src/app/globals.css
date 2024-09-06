@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+ font-family: "Poppins", sans-serif;
+ font-weight: 100;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+#main_container{
+    width: 100%;
+    height: calc(100% - 55px);
+    margin-top: 1px;
+
+    /* background: gold */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+#main{
+box-shadow: 0px 0px 10px gray;
+z-index: 1000;
+}
+#content{
+    width: 48%;
+    height: 100%;
+    /* background-color: burlywood; */
+}
+#img{
+    width: 48%;
+    height: 100%;
+    margin-left: 2rem;
+    /* background-color: rgb(94, 54, 3); */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+#para{
+    margin-top: -2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3vw;
+    line-height: 25px;
 }
+
+#about_para{
+    line-height: 30px;
+    font-size: 1.3vw;
+}
+#aboutimg{
+    margin-bottom: 25px;
+}
+#contactinp1, #contactinp2{
+    border-bottom: .1rem solid rgb(23, 107, 216);
+    outline: none;
+    padding-left: 5px;
+    color: #333;
+}
+
+#contacttexterea{
+    border: .1rem solid rgb(23, 107, 216);
+    color: #333;
+    background: none;
+    outline: none;
+}
+/* #contactinp:hover{
+    
+} */
+
+/* #contactinp */
